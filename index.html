@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anna Rose Joshy | Portfolio</title>
-  <meta name="description" content="Portfolio of Anna Rose Joshy – M.Sc. Computer Science, AI & Data Systems." />
+  <title>Anna Rose Joshy | AI Automation Portfolio</title>
+  <meta name="description" content="Portfolio of Anna Rose Joshy – AI Automation, Data Systems, M.Sc. Computer Science (University of Passau)." />
+
   <style>
     :root{
       --bg:#0b0f17;
@@ -13,92 +14,181 @@
       --text:#e5e7eb;
       --accent:#7c3aed;
       --accent2:#22c55e;
-      --border:rgba(255,255,255,.08);
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --border:rgba(255,255,255,.10);
+      --shadow: 0 12px 35px rgba(0,0,0,.35);
       --radius:18px;
-      --max: 980px;
+      --max: 1040px;
     }
+
     *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      background: radial-gradient(1200px 800px at 20% -10%, rgba(124,58,237,.35), transparent 60%),
-                  radial-gradient(1000px 700px at 90% 10%, rgba(34,197,94,.20), transparent 55%),
-                  var(--bg);
+      background:
+        radial-gradient(1200px 800px at 18% -10%, rgba(124,58,237,.33), transparent 60%),
+        radial-gradient(1000px 700px at 90% 5%, rgba(34,197,94,.18), transparent 55%),
+        var(--bg);
       color:var(--text);
-      line-height:1.55;
+      line-height:1.6;
     }
+
     a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 70px;}
+    .wrap{max-width:var(--max); margin:0 auto; padding:26px 18px 70px;}
+
+    /* Top Nav */
     .nav{
       display:flex; align-items:center; justify-content:space-between;
-      gap:14px; padding:14px 16px; border:1px solid var(--border);
-      background:rgba(17,24,39,.72); backdrop-filter: blur(10px);
+      gap:14px; padding:12px 14px; border:1px solid var(--border);
+      background:rgba(17,24,39,.70); backdrop-filter: blur(10px);
       border-radius:999px; position:sticky; top:14px; z-index:10;
     }
-    .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px}
     .dot{width:10px; height:10px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent2))}
-    .links{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
-    .links a{padding:8px 10px; border-radius:999px; color:var(--muted)}
-    .links a:hover{background:rgba(255,255,255,.06); color:var(--text)}
-    header{margin-top:26px; padding:28px 22px; border:1px solid var(--border); border-radius:var(--radius);
-      background:rgba(17,24,39,.55); box-shadow:var(--shadow)}
-    .hero{display:grid; grid-template-columns: 1.4fr .9fr; gap:18px; align-items:start}
-    @media (max-width:860px){ .hero{grid-template-columns:1fr} .nav{position:static} }
+    .links{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .links a{padding:8px 10px; border-radius:999px; color:var(--muted); font-size:14px}
+    .links a:hover{background:rgba(255,255,255,.07); color:var(--text)}
+
+    /* Hero */
+    header{
+      margin-top:18px;
+      padding:24px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:rgba(17,24,39,.55);
+      box-shadow:var(--shadow);
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns: 1.3fr .9fr;
+      gap:18px;
+      align-items:start;
+    }
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .nav{position:static}
+    }
+
     h1{margin:0 0 6px; font-size:40px; line-height:1.1}
-    .subtitle{color:var(--muted); margin:0 0 16px; font-size:15px}
-    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin:16px 0 8px}
+    .subtitle{color:var(--muted); margin:0 0 10px; font-size:15px}
+    .muted{color:var(--muted)}
+    .small{font-size:13px; color:var(--muted)}
+
+    .profileRow{
+      display:flex; gap:18px; align-items:center; flex-wrap:wrap;
+      padding-bottom:10px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      margin-bottom:14px;
+    }
+    .pfp{
+      width:132px; height:132px; border-radius:50%;
+      object-fit:cover;
+      border:3px solid rgba(124,58,237,.75);
+      box-shadow: 0 10px 26px rgba(124,58,237,.18);
+      background:rgba(255,255,255,.04);
+    }
+
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin:12px 0 10px}
     .pill{
       padding:8px 12px; border-radius:999px; border:1px solid var(--border);
-      background:rgba(255,255,255,.04); color:var(--muted); font-size:13px
+      background:rgba(255,255,255,.04);
+      color:var(--muted); font-size:13px
     }
-    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
       padding:11px 14px; border-radius:12px; border:1px solid var(--border);
-      background:rgba(255,255,255,.06); color:var(--text); font-weight:600
+      background:rgba(255,255,255,.06);
+      color:var(--text); font-weight:700; font-size:14px;
+      transition:transform .15s ease, background .15s ease;
     }
+    .btn:hover{transform: translateY(-1px); background:rgba(255,255,255,.09)}
     .btn.primary{
       border:none;
       background:linear-gradient(135deg,var(--accent), #4f46e5);
       box-shadow: 0 12px 28px rgba(124,58,237,.25);
     }
-    .btn:hover{transform: translateY(-1px)}
-    .card{
-      border:1px solid var(--border); border-radius:var(--radius);
-      background:rgba(17,24,39,.55); box-shadow:var(--shadow);
-      padding:18px 18px;
+    .btn.ghost{background:transparent}
+
+    /* Cards / Sections */
+    .section{margin-top:18px}
+    .grid{
+      display:grid; grid-template-columns: 1fr 1fr;
+      gap:16px; margin-top:16px
     }
-    .rightbox{display:flex; flex-direction:column; gap:12px}
-    .small{font-size:13px; color:var(--muted)}
-    .grid{display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:18px}
-    @media (max-width:860px){ .grid{grid-template-columns:1fr} }
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+
+    .card{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:rgba(17,24,39,.55);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+
     h2{margin:0 0 10px; font-size:18px}
     ul{margin:8px 0 0; padding-left:18px; color:var(--muted)}
-    .section{margin-top:20px}
-    .projects{display:grid; grid-template-columns: 1fr 1fr; gap:16px}
-    @media (max-width:860px){ .projects{grid-template-columns:1fr} }
-    .proj-title{display:flex; align-items:center; justify-content:space-between; gap:12px}
-    .tag{
-      font-size:12px; color:rgba(255,255,255,.82);
-      padding:6px 10px; border-radius:999px;
-      background:rgba(124,58,237,.18); border:1px solid rgba(124,58,237,.25)
+    li{margin:6px 0}
+
+    .kpi{
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:12px; margin-top:10px
     }
-    .tag.green{background:rgba(34,197,94,.16); border-color:rgba(34,197,94,.25)}
-    .muted{color:var(--muted)}
-    .footer{margin-top:26px; text-align:center; color:var(--muted); font-size:13px}
+    @media (max-width:520px){ .kpi{grid-template-columns:1fr} }
+    .kpi .item{
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(0,0,0,.18);
+      border-radius:14px;
+      padding:12px;
+    }
+    .kpi .label{font-size:12px; color:var(--muted)}
+    .kpi .value{font-weight:800; margin-top:2px}
+
+    /* Project cards */
+    .projects{
+      display:grid; grid-template-columns: 1fr 1fr;
+      gap:16px;
+    }
+    @media (max-width:900px){ .projects{grid-template-columns:1fr} }
+
+    .projHead{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      margin-bottom:6px;
+    }
+    .tag{
+      font-size:12px; color:rgba(255,255,255,.88);
+      padding:6px 10px; border-radius:999px;
+      background:rgba(124,58,237,.18);
+      border:1px solid rgba(124,58,237,.28);
+      white-space:nowrap;
+    }
+    .tag.green{
+      background:rgba(34,197,94,.14);
+      border-color:rgba(34,197,94,.24);
+    }
+
+    /* Footer */
+    .footer{
+      margin-top:22px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .sep{height:1px; background:rgba(255,255,255,.08); margin:12px 0}
     .kbd{
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 12px; padding:2px 6px; border:1px solid var(--border); border-radius:8px; background:rgba(0,0,0,.25);
+      font-size: 12px; padding:2px 6px; border:1px solid var(--border);
+      border-radius:8px; background:rgba(0,0,0,.25);
     }
-    .twoCol{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-    @media (max-width:860px){ .twoCol{grid-template-columns:1fr} }
   </style>
 </head>
 
 <body>
   <div class="wrap">
 
+    <!-- NAV -->
     <div class="nav">
       <div class="brand">
         <span class="dot"></span>
@@ -109,17 +199,30 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
 
+    <!-- HERO -->
     <header>
       <div class="hero">
+
+        <!-- Left -->
         <div>
-          <h1>AI & Data Systems Portfolio</h1>
-          <p class="subtitle">
-            M.Sc. Computer Science (University of Passau) • Product-oriented collaboration • Data pipelines & analytics
-          </p>
+          <div class="profileRow">
+            <!-- Upload your photo to the repo and name it exactly: profile.jpg -->
+            <img class="pfp" src="profile.jpg" alt="Profile photo of Anna Rose Joshy" />
+
+            <div>
+              <h1>AI Automation & Data Systems</h1>
+              <p class="subtitle">M.Sc. Computer Science (University of Passau) • Automating workflows • Data-driven solutions</p>
+              <p class="muted" style="margin:0">
+                I build intelligent automation pipelines and analytics systems that turn manual processes into scalable,
+                maintainable, and user-focused solutions.
+              </p>
+            </div>
+          </div>
 
           <div class="pillrow">
             <span class="pill">Python • SQL • JavaScript</span>
@@ -130,58 +233,60 @@
 
           <div class="cta">
             <a class="btn primary" href="#contact">Contact</a>
-            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn" href="#projects">View Projects</a>
             <a class="btn" href="https://github.com/AnnaRose20" target="_blank" rel="noreferrer">GitHub</a>
-            <!-- Replace with your real LinkedIn URL -->
-            <a class="btn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://www.linkedin.com/in/anna-rose-joshy-29b998196/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <!-- Optional: Upload your CV PDF as AnnaRose_CV.pdf and enable this -->
+            <!-- <a class="btn ghost" href="AnnaRose_CV.pdf" target="_blank" rel="noreferrer">Download Resume</a> -->
           </div>
 
-          <p class="small" style="margin-top:14px">
-            Tip: Add your CV PDF to the repo as <span class="kbd">AnnaRose_CV.pdf</span> and link it here.
+          <p class="small" style="margin-top:12px">
+            To show your photo: upload it to this repo and name it <span class="kbd">profile.jpg</span>.
           </p>
         </div>
 
-        <div class="rightbox">
-          <div class="card">
-            <h2>Quick Snapshot</h2>
-            <div class="twoCol">
-              <div>
-                <div class="small">Location</div>
-                <div>Passau, Germany</div>
-              </div>
-              <div>
-                <div class="small">Focus</div>
-                <div>AI + Data + Product</div>
-              </div>
-              <div>
-                <div class="small">Email</div>
-                <div><a href="mailto:annarosejoshy65@gmail.com">annarosejoshy65@gmail.com</a></div>
-              </div>
-              <div>
-                <div class="small">Phone</div>
-                <div>+49 15510714519</div>
-              </div>
+        <!-- Right -->
+        <div class="card">
+          <h2>Quick Snapshot</h2>
+          <div class="kpi">
+            <div class="item">
+              <div class="label">Location</div>
+              <div class="value">Passau, Germany</div>
+            </div>
+            <div class="item">
+              <div class="label">Focus</div>
+              <div class="value">AI Automation</div>
+            </div>
+            <div class="item">
+              <div class="label">Email</div>
+              <div class="value"><a href="mailto:annarosejoshy65@gmail.com">annarosejoshy65@gmail.com</a></div>
+            </div>
+            <div class="item">
+              <div class="label">Phone</div>
+              <div class="value">+49 15510714519</div>
             </div>
           </div>
 
-          <div class="card">
-            <h2>What I’m Looking For</h2>
-            <p class="muted" style="margin:0">
-              Roles in <b>AI / Data Engineering</b> or <b>product-oriented technical roles</b> where I can support
-              structured workflows, translate technical ideas into user value, and build reliable data-driven systems.
-            </p>
-          </div>
+          <div class="sep"></div>
+
+          <h2 style="margin-top:0">What I’m Looking For</h2>
+          <p class="muted" style="margin:0">
+            Roles in <b>AI Automation</b>, <b>Data Engineering</b>, or <b>product-oriented technical roles</b> where I can
+            design automated workflows, integrate AI into real applications, and support teams with scalable data-driven solutions.
+          </p>
         </div>
+
       </div>
     </header>
 
+    <!-- ABOUT + EDUCATION -->
     <section id="about" class="section grid">
       <div class="card">
         <h2>About Me</h2>
         <p class="muted" style="margin:0">
-          I am a motivated Computer Science Master’s student with strong analytical and organizational skills.
-          I enjoy working at the intersection of <b>data</b>, <b>AI</b>, and <b>product thinking</b>—supporting collaboration,
-          facilitating agile workflows, and building structured solutions that are easy to maintain and communicate.
+          I’m a Computer Science Master’s student at the University of Passau with strong analytical and organizational skills.
+          I enjoy working at the intersection of <b>AI, automation, data,</b> and <b>product collaboration</b>—creating structured
+          processes, improving visibility, and delivering solutions that are easy to communicate and maintain.
         </p>
       </div>
 
@@ -195,51 +300,54 @@
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="section grid">
       <div class="card">
         <h2>Technical Skills</h2>
         <ul>
-          <li>Programming: Python, SQL, JavaScript</li>
-          <li>Tools: Git/GitHub, Docker</li>
-          <li>Data: processing pipelines, analysis, anomaly detection basics</li>
-          <li>Visualization & reporting: dashboards, presentations, documentation</li>
+          <li><b>Programming:</b> Python, SQL, JavaScript</li>
+          <li><b>Data:</b> processing pipelines, analysis, anomaly detection basics</li>
+          <li><b>Engineering:</b> modular architecture, maintainability, documentation</li>
+          <li><b>Tools:</b> Git/GitHub, Docker</li>
         </ul>
       </div>
+
       <div class="card">
-        <h2>Collaboration & Product</h2>
+        <h2>Automation & Collaboration</h2>
         <ul>
-          <li>Agile: sprint support, backlog refinement, planning support</li>
-          <li>Tools: Jira, Confluence, Notion, Miro, MS Office</li>
-          <li>Strengths: stakeholder communication, prioritization, structured documentation</li>
+          <li><b>Agile support:</b> sprint planning support, backlog refinement, reviews</li>
+          <li><b>Tools:</b> Jira, Confluence, Notion, Miro, MS Office</li>
+          <li><b>Strengths:</b> stakeholder communication, prioritization, structured documentation</li>
         </ul>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience" class="section grid">
       <div class="card">
-        <div class="proj-title">
+        <div class="projHead">
           <h2 style="margin:0">Ibrick Predictive Maintenance System</h2>
           <span class="tag green">Startup Project</span>
         </div>
-        <p class="muted" style="margin:8px 0 0">Passau, Germany • 06/2025 – 12/2025</p>
+        <p class="muted" style="margin:6px 0 0">Passau, Germany • 06/2025 – 12/2025</p>
         <ul>
           <li>Designed data processing pipelines for structured sensor datasets</li>
           <li>Analyzed datasets to identify patterns, anomalies, and operational risks</li>
-          <li>Designed modular architecture for scalability and maintainability</li>
+          <li>Designed modular project architecture for scalability and maintainability</li>
           <li>Supported planning and coordination of development tasks</li>
           <li>Maintained documentation and task tracking using Notion</li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="proj-title">
+        <div class="projHead">
           <h2 style="margin:0">Jobin & Jismi IT Services</h2>
           <span class="tag">Internship</span>
         </div>
-        <p class="muted" style="margin:8px 0 0">Kerala, India • 06/2022 – 11/2022</p>
+        <p class="muted" style="margin:6px 0 0">Kerala, India • 06/2022 – 11/2022</p>
         <ul>
-          <li>Worked in agile environment using Jira and Confluence</li>
-          <li>Contributed to design and prototyping of an AI chatbot system</li>
+          <li>Agile development environment using Jira and Confluence</li>
+          <li>Contributed to design and prototyping of an AI-based chatbot system</li>
           <li>Improved projected engagement by 25% and reduced response latency by 40%</li>
           <li>Evaluated chatbot architectures for scalability (30% improvement)</li>
           <li>Authored documentation reducing onboarding time by 50%</li>
@@ -248,79 +356,85 @@
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="card" style="margin-bottom:16px">
         <h2>Projects</h2>
-        <p class="muted" style="margin:0">A few highlights — I can expand these into detailed case studies if you want.</p>
+        <p class="muted" style="margin:0">
+          Highlights — you can later expand these into full case studies (problem → approach → results → screenshots).
+        </p>
       </div>
 
       <div class="projects">
         <div class="card">
-          <div class="proj-title">
+          <div class="projHead">
             <h2 style="margin:0">Data Visualization & Analysis Dashboard</h2>
             <span class="tag">Web Analytics</span>
           </div>
-          <p class="muted">04/2025 – 07/2025</p>
+          <p class="muted" style="margin:6px 0 0">04/2025 – 07/2025</p>
           <ul>
             <li>Web-based analytics tool for structured presentation of results</li>
             <li>Focused on communicating insights to non-technical audiences</li>
             <li>Planned milestones and coordinated processing → visualization → deployment</li>
+            <li>Documentation and presentations for clear communication</li>
           </ul>
-          <p style="margin:10px 0 0">
-            <a class="btn" href="https://github.com/AnnaRose20/Data-visualisation" target="_blank" rel="noreferrer">
-              View on GitHub
-            </a>
-          </p>
+          <div class="cta" style="margin-top:10px">
+            <a class="btn" href="https://github.com/AnnaRose20/Data-visualisation" target="_blank" rel="noreferrer">View Repo</a>
+          </div>
         </div>
 
         <div class="card">
-          <div class="proj-title">
+          <div class="projHead">
             <h2 style="margin:0">RoadBot</h2>
             <span class="tag green">AI Prototype</span>
           </div>
-          <p class="muted">10/2022 – 06/2023</p>
+          <p class="muted" style="margin:6px 0 0">10/2022 – 06/2023</p>
           <ul>
-            <li>Autonomous driving assistance: pothole detection & route optimization</li>
-            <li>Data collection + preprocessing from sensor and image sources</li>
-            <li>Integrated perception outputs with backend logic to support routing decisions</li>
+            <li>Autonomous driving assistance: pothole detection and route optimization</li>
+            <li>Data collection and preprocessing from sensor and image sources</li>
+            <li>Integrated perception outputs with backend logic for routing decisions</li>
+            <li>Strengthened understanding of perception-driven, data-driven systems</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="section grid">
+    <!-- LEADERSHIP -->
+    <section id="leadership" class="section grid">
       <div class="card">
-        <h2>Leadership & Events</h2>
-        <p class="muted" style="margin:0">Hackathon Planning & Management (2022)</p>
+        <h2>Leadership & Event Organization</h2>
+        <p class="muted" style="margin:0">Hackathon Planning & Management (2022) • Kerala, India</p>
         <ul>
           <li>Planned and coordinated a student hackathon from concept to execution</li>
           <li>Managed scheduling, task allocation, and stakeholder communication</li>
           <li>Supported logistics, registrations, and real-time issue resolution</li>
           <li>Documented feedback and outcomes for future events</li>
         </ul>
-        <p style="margin:10px 0 0">
+        <div class="cta" style="margin-top:10px">
           <a class="btn" href="https://tek-o-thon.vercel.app/" target="_blank" rel="noreferrer">Event Website</a>
-        </p>
+        </div>
       </div>
 
       <div class="card" id="contact">
         <h2>Contact</h2>
         <p style="margin:0">
-          Email: <a href="mailto:annarosejoshy65@gmail.com"><b>annarosejoshy65@gmail.com</b></a><br/>
-          GitHub: <a href="https://github.com/AnnaRose20" target="_blank" rel="noreferrer"><b>@AnnaRose20</b></a><br/>
-          LinkedIn: <span class="muted">add your link</span><br/>
-          Phone: <span class="muted">+49 15510714519</span>
+          <b>Email:</b> <a href="mailto:annarosejoshy65@gmail.com">annarosejoshy65@gmail.com</a><br/>
+          <b>GitHub:</b> <a href="https://github.com/AnnaRose20" target="_blank" rel="noreferrer">@AnnaRose20</a><br/>
+          <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/anna-rose-joshy-29b998196/" target="_blank" rel="noreferrer">anna-rose-joshy</a><br/>
+          <b>Phone:</b> +49 15510714519
         </p>
 
-        <p class="small" style="margin-top:14px">
-          Want a downloadable CV button? Upload your CV to this repo as <span class="kbd">AnnaRose_CV.pdf</span>
-          and I’ll add a “Download Resume” button.
+        <div class="sep"></div>
+
+        <p class="small" style="margin:0">
+          Want a resume download button? Upload your CV to this repo as <span class="kbd">AnnaRose_CV.pdf</span> and then
+          uncomment the “Download Resume” button in the hero section.
         </p>
       </div>
     </section>
 
     <div class="footer">
-      © <span id="year"></span> Anna Rose Joshy • Built with GitHub Pages
+      © <span id="year"></span> Anna Rose Joshy • Hosted on GitHub Pages
     </div>
 
   </div>
