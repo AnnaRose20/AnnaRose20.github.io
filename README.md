@@ -1,5 +1,5 @@
 # Anna Rose Joshy  
-### AI & Data Systems Engineer | M.Sc Computer Science – Universität Passau  
+### M.Sc Computer Science – Universität Passau  
 
 📍 Passau, Germany  
 📧 annarosejoshy65@gmail.com  
