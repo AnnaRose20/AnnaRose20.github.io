@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anna Rose Joshy | Portfolio</title>
+  <meta name="description" content="Portfolio of Anna Rose Joshy – M.Sc. Computer Science, AI & Data Systems." />
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#111827;
+      --muted:#9ca3af;
+      --text:#e5e7eb;
+      --accent:#7c3aed;
+      --accent2:#22c55e;
+      --border:rgba(255,255,255,.08);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(124,58,237,.35), transparent 60%),
+                  radial-gradient(1000px 700px at 90% 10%, rgba(34,197,94,.20), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 70px;}
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:14px 16px; border:1px solid var(--border);
+      background:rgba(17,24,39,.72); backdrop-filter: blur(10px);
+      border-radius:999px; position:sticky; top:14px; z-index:10;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px}
+    .dot{width:10px; height:10px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent2))}
+    .links{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+    .links a{padding:8px 10px; border-radius:999px; color:var(--muted)}
+    .links a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    header{margin-top:26px; padding:28px 22px; border:1px solid var(--border); border-radius:var(--radius);
+      background:rgba(17,24,39,.55); box-shadow:var(--shadow)}
+    .hero{display:grid; grid-template-columns: 1.4fr .9fr; gap:18px; align-items:start}
+    @media (max-width:860px){ .hero{grid-template-columns:1fr} .nav{position:static} }
+    h1{margin:0 0 6px; font-size:40px; line-height:1.1}
+    .subtitle{color:var(--muted); margin:0 0 16px; font-size:15px}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin:16px 0 8px}
+    .pill{
+      padding:8px 12px; border-radius:999px; border:1px solid var(--border);
+      background:rgba(255,255,255,.04); color:var(--muted); font-size:13px
+    }
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px; border-radius:12px; border:1px solid var(--border);
+      background:rgba(255,255,255,.06); color:var(--text); font-weight:600
+    }
+    .btn.primary{
+      border:none;
+      background:linear-gradient(135deg,var(--accent), #4f46e5);
+      box-shadow: 0 12px 28px rgba(124,58,237,.25);
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .card{
+      border:1px solid var(--border); border-radius:var(--radius);
+      background:rgba(17,24,39,.55); box-shadow:var(--shadow);
+      padding:18px 18px;
+    }
+    .rightbox{display:flex; flex-direction:column; gap:12px}
+    .small{font-size:13px; color:var(--muted)}
+    .grid{display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:18px}
+    @media (max-width:860px){ .grid{grid-template-columns:1fr} }
+    h2{margin:0 0 10px; font-size:18px}
+    ul{margin:8px 0 0; padding-left:18px; color:var(--muted)}
+    .section{margin-top:20px}
+    .projects{display:grid; grid-template-columns: 1fr 1fr; gap:16px}
+    @media (max-width:860px){ .projects{grid-template-columns:1fr} }
+    .proj-title{display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .tag{
+      font-size:12px; color:rgba(255,255,255,.82);
+      padding:6px 10px; border-radius:999px;
+      background:rgba(124,58,237,.18); border:1px solid rgba(124,58,237,.25)
+    }
+    .tag.green{background:rgba(34,197,94,.16); border-color:rgba(34,197,94,.25)}
+    .muted{color:var(--muted)}
+    .footer{margin-top:26px; text-align:center; color:var(--muted); font-size:13px}
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px; padding:2px 6px; border:1px solid var(--border); border-radius:8px; background:rgba(0,0,0,.25);
+    }
+    .twoCol{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width:860px){ .twoCol{grid-template-columns:1fr} }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>Anna Rose Joshy</span>
+      </div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <header>
+      <div class="hero">
+        <div>
+          <h1>AI & Data Systems Portfolio</h1>
+          <p class="subtitle">
+            M.Sc. Computer Science (University of Passau) • Product-oriented collaboration • Data pipelines & analytics
+          </p>
+
+          <div class="pillrow">
+            <span class="pill">Python • SQL • JavaScript</span>
+            <span class="pill">Jira • Confluence • Notion</span>
+            <span class="pill">Git • GitHub • Docker</span>
+            <span class="pill">English (C1) • German (B1)</span>
+          </div>
+
+          <div class="cta">
+            <a class="btn primary" href="#contact">Contact</a>
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn" href="https://github.com/AnnaRose20" target="_blank" rel="noreferrer">GitHub</a>
+            <!-- Replace with your real LinkedIn URL -->
+            <a class="btn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <p class="small" style="margin-top:14px">
+            Tip: Add your CV PDF to the repo as <span class="kbd">AnnaRose_CV.pdf</span> and link it here.
+          </p>
+        </div>
+
+        <div class="rightbox">
+          <div class="card">
+            <h2>Quick Snapshot</h2>
+            <div class="twoCol">
+              <div>
+                <div class="small">Location</div>
+                <div>Passau, Germany</div>
+              </div>
+              <div>
+                <div class="small">Focus</div>
+                <div>AI + Data + Product</div>
+              </div>
+              <div>
+                <div class="small">Email</div>
+                <div><a href="mailto:annarosejoshy65@gmail.com">annarosejoshy65@gmail.com</a></div>
+              </div>
+              <div>
+                <div class="small">Phone</div>
+                <div>+49 15510714519</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>What I’m Looking For</h2>
+            <p class="muted" style="margin:0">
+              Roles in <b>AI / Data Engineering</b> or <b>product-oriented technical roles</b> where I can support
+              structured workflows, translate technical ideas into user value, and build reliable data-driven systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section grid">
+      <div class="card">
+        <h2>About Me</h2>
+        <p class="muted" style="margin:0">
+          I am a motivated Computer Science Master’s student with strong analytical and organizational skills.
+          I enjoy working at the intersection of <b>data</b>, <b>AI</b>, and <b>product thinking</b>—supporting collaboration,
+          facilitating agile workflows, and building structured solutions that are easy to maintain and communicate.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Education</h2>
+        <p style="margin:0">
+          <b>M.Sc. Computer Science</b> — University of Passau <span class="muted">(2024–Present)</span><br/>
+          <b>B.Tech Computer Science</b> — Sahrdaya College of Engineering and Technology <span class="muted">(2019–2023)</span><br/>
+          <span class="muted">CGPA: 7.97</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section grid">
+      <div class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Programming: Python, SQL, JavaScript</li>
+          <li>Tools: Git/GitHub, Docker</li>
+          <li>Data: processing pipelines, analysis, anomaly detection basics</li>
+          <li>Visualization & reporting: dashboards, presentations, documentation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Collaboration & Product</h2>
+        <ul>
+          <li>Agile: sprint support, backlog refinement, planning support</li>
+          <li>Tools: Jira, Confluence, Notion, Miro, MS Office</li>
+          <li>Strengths: stakeholder communication, prioritization, structured documentation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section grid">
+      <div class="card">
+        <div class="proj-title">
+          <h2 style="margin:0">Ibrick Predictive Maintenance System</h2>
+          <span class="tag green">Startup Project</span>
+        </div>
+        <p class="muted" style="margin:8px 0 0">Passau, Germany • 06/2025 – 12/2025</p>
+        <ul>
+          <li>Designed data processing pipelines for structured sensor datasets</li>
+          <li>Analyzed datasets to identify patterns, anomalies, and operational risks</li>
+          <li>Designed modular architecture for scalability and maintainability</li>
+          <li>Supported planning and coordination of development tasks</li>
+          <li>Maintained documentation and task tracking using Notion</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="proj-title">
+          <h2 style="margin:0">Jobin & Jismi IT Services</h2>
+          <span class="tag">Internship</span>
+        </div>
+        <p class="muted" style="margin:8px 0 0">Kerala, India • 06/2022 – 11/2022</p>
+        <ul>
+          <li>Worked in agile environment using Jira and Confluence</li>
+          <li>Contributed to design and prototyping of an AI chatbot system</li>
+          <li>Improved projected engagement by 25% and reduced response latency by 40%</li>
+          <li>Evaluated chatbot architectures for scalability (30% improvement)</li>
+          <li>Authored documentation reducing onboarding time by 50%</li>
+          <li>Supported sprint reviews, iteration planning, and backlog refinement</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="card" style="margin-bottom:16px">
+        <h2>Projects</h2>
+        <p class="muted" style="margin:0">A few highlights — I can expand these into detailed case studies if you want.</p>
+      </div>
+
+      <div class="projects">
+        <div class="card">
+          <div class="proj-title">
+            <h2 style="margin:0">Data Visualization & Analysis Dashboard</h2>
+            <span class="tag">Web Analytics</span>
+          </div>
+          <p class="muted">04/2025 – 07/2025</p>
+          <ul>
+            <li>Web-based analytics tool for structured presentation of results</li>
+            <li>Focused on communicating insights to non-technical audiences</li>
+            <li>Planned milestones and coordinated processing → visualization → deployment</li>
+          </ul>
+          <p style="margin:10px 0 0">
+            <a class="btn" href="https://github.com/AnnaRose20/Data-visualisation" target="_blank" rel="noreferrer">
+              View on GitHub
+            </a>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="proj-title">
+            <h2 style="margin:0">RoadBot</h2>
+            <span class="tag green">AI Prototype</span>
+          </div>
+          <p class="muted">10/2022 – 06/2023</p>
+          <ul>
+            <li>Autonomous driving assistance: pothole detection & route optimization</li>
+            <li>Data collection + preprocessing from sensor and image sources</li>
+            <li>Integrated perception outputs with backend logic to support routing decisions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section grid">
+      <div class="card">
+        <h2>Leadership & Events</h2>
+        <p class="muted" style="margin:0">Hackathon Planning & Management (2022)</p>
+        <ul>
+          <li>Planned and coordinated a student hackathon from concept to execution</li>
+          <li>Managed scheduling, task allocation, and stakeholder communication</li>
+          <li>Supported logistics, registrations, and real-time issue resolution</li>
+          <li>Documented feedback and outcomes for future events</li>
+        </ul>
+        <p style="margin:10px 0 0">
+          <a class="btn" href="https://tek-o-thon.vercel.app/" target="_blank" rel="noreferrer">Event Website</a>
+        </p>
+      </div>
+
+      <div class="card" id="contact">
+        <h2>Contact</h2>
+        <p style="margin:0">
+          Email: <a href="mailto:annarosejoshy65@gmail.com"><b>annarosejoshy65@gmail.com</b></a><br/>
+          GitHub: <a href="https://github.com/AnnaRose20" target="_blank" rel="noreferrer"><b>@AnnaRose20</b></a><br/>
+          LinkedIn: <span class="muted">add your link</span><br/>
+          Phone: <span class="muted">+49 15510714519</span>
+        </p>
+
+        <p class="small" style="margin-top:14px">
+          Want a downloadable CV button? Upload your CV to this repo as <span class="kbd">AnnaRose_CV.pdf</span>
+          and I’ll add a “Download Resume” button.
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      © <span id="year"></span> Anna Rose Joshy • Built with GitHub Pages
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
