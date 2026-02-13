@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anna Rose Joshy | Agentic AI & Automation</title>
-  <meta name="description" content="Portfolio of Anna Rose Joshy – Agentic AI, AI Automation, Data Systems, M.Sc. Computer Science (University of Passau)." />
+  <title>Anna Rose Joshy | Portfolio</title>
+  <meta name="description" content="Anna Rose Joshy – M.Sc. Computer Science, AI Automation, Product workflows, Agile collaboration." />
 
   <style>
     :root{
@@ -17,7 +17,7 @@
       --border:rgba(255,255,255,.10);
       --shadow: 0 12px 35px rgba(0,0,0,.35);
       --radius:18px;
-      --max: 1080px;
+      --max: 1120px;
     }
 
     *{box-sizing:border-box}
@@ -36,7 +36,7 @@
     a{color:inherit; text-decoration:none}
     .wrap{max-width:var(--max); margin:0 auto; padding:26px 18px 70px;}
 
-    /* Top Nav */
+    /* Nav */
     .nav{
       display:flex; align-items:center; justify-content:space-between;
       gap:14px; padding:12px 14px; border:1px solid var(--border);
@@ -58,7 +58,6 @@
       background:rgba(17,24,39,.55);
       box-shadow:var(--shadow);
     }
-
     .hero{
       display:grid;
       grid-template-columns: 1.3fr .9fr;
@@ -74,7 +73,6 @@
     .subtitle{color:var(--muted); margin:0 0 10px; font-size:15px}
     .muted{color:var(--muted)}
     .small{font-size:13px; color:var(--muted)}
-
     .profileRow{
       display:flex; gap:18px; align-items:center; flex-wrap:wrap;
       padding-bottom:12px;
@@ -127,7 +125,6 @@
       box-shadow:var(--shadow);
       padding:18px;
     }
-
     h2{margin:0 0 10px; font-size:18px}
     h3{margin:14px 0 8px; font-size:16px}
     ul{margin:8px 0 0; padding-left:18px; color:var(--muted)}
@@ -147,7 +144,7 @@
     .kpi .label{font-size:12px; color:var(--muted)}
     .kpi .value{font-weight:800; margin-top:2px}
 
-    /* Projects */
+    /* Projects grid */
     .projects{
       display:grid; grid-template-columns: 1fr 1fr;
       gap:16px;
@@ -170,7 +167,6 @@
       border-color:rgba(34,197,94,.24);
     }
 
-    /* Footer */
     .footer{
       margin-top:22px;
       text-align:center;
@@ -196,7 +192,8 @@
         <span>Anna Rose Joshy</span>
       </div>
       <div class="links">
-        <a href="#about">About</a>
+        <a href="#objective">Objective</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
@@ -212,28 +209,21 @@
         <!-- Left -->
         <div>
           <div class="profileRow">
-            <!-- Make sure your photo file in the repo is named exactly: profile.jpeg -->
             <img class="pfp" src="./profile.jpeg" alt="Profile photo of Anna Rose Joshy" />
-
             <div>
-              <h1>Agentic AI & Automation</h1>
-              <p class="subtitle">M.Sc. Computer Science (University of Passau) • AI Automation • Data Systems</p>
+              <h1>AI Automation • Product Workflows • Data Systems</h1>
+              <p class="subtitle">M.Sc. Computer Science — University of Passau</p>
               <p class="muted" style="margin:0">
-                I am a Master’s student in Computer Science actively seeking an internship opportunity in <b>Agentic AI</b>
-                and intelligent automation. I bring hands-on experience working in <b>agile development environments</b>
-                through industrial projects, collaborating with cross-functional teams using tools like Jira and Confluence
-                to support iterative development and product delivery.
-                <br><br>
-                I have strong proficiency in <b>MS Office tools</b> for documentation, analysis, and professional presentations,
-                and I enjoy working collaboratively to deliver high-quality results efficiently.
+                Seeking an internship involving <b>Agentic AI</b> and intelligent automation, with experience supporting
+                product-oriented collaboration in agile environments.
               </p>
             </div>
           </div>
 
           <div class="pillrow">
             <span class="pill">Python • SQL • JavaScript</span>
-            <span class="pill">Agentic AI • Automation • Workflows</span>
-            <span class="pill">Jira • Confluence • Notion</span>
+            <span class="pill">Jira • Confluence • Notion • Miro</span>
+            <span class="pill">MS Office (PowerPoint, Excel, Outlook)</span>
             <span class="pill">Git • GitHub • Docker</span>
             <span class="pill">English (C1) • German (B1)</span>
           </div>
@@ -244,15 +234,13 @@
             <a class="btn" href="https://github.com/AnnaRose20" target="_blank" rel="noreferrer">GitHub</a>
             <a class="btn" href="https://www.linkedin.com/in/anna-rose-joshy-29b998196/" target="_blank" rel="noreferrer">LinkedIn</a>
 
-            <!-- Resume Download: upload your resume to repo as AnnaRose_CV.pdf OR AnnaRose_CV.odt -->
-            <a class="btn ghost" href="./AnnaRose_CV.pdf" download>Download Resume (PDF)</a>
-            <!-- If you prefer ODF, upload AnnaRose_CV.odt and use this instead:
-            <a class="btn ghost" href="./AnnaRose_CV.odt" download>Download Resume (ODF)</a>
-            -->
+            <!-- Resume download: upload file to repo root with this exact name -->
+            <a class="btn ghost" href="./AnnaRose_CV.pdf" download>Download Resume</a>
+            <!-- If you use ODF instead, upload AnnaRose_CV.odt and change link above to ./AnnaRose_CV.odt -->
           </div>
 
           <p class="small" style="margin-top:12px">
-            Files needed in repo root: <span class="kbd">profile.jpeg</span> and <span class="kbd">AnnaRose_CV.pdf</span> (or <span class="kbd">AnnaRose_CV.odt</span>).
+            Required files in repo root: <span class="kbd">profile.jpeg</span> and <span class="kbd">AnnaRose_CV.pdf</span>.
           </p>
         </div>
 
@@ -265,10 +253,6 @@
               <div class="value">Passau, Germany</div>
             </div>
             <div class="item">
-              <div class="label">Focus</div>
-              <div class="value">Agentic AI</div>
-            </div>
-            <div class="item">
               <div class="label">Email</div>
               <div class="value"><a href="mailto:annarosejoshy65@gmail.com">annarosejoshy65@gmail.com</a></div>
             </div>
@@ -276,61 +260,59 @@
               <div class="label">Phone</div>
               <div class="value">+49 15510714519</div>
             </div>
+            <div class="item">
+              <div class="label">Focus</div>
+              <div class="value">Agentic AI + Automation</div>
+            </div>
           </div>
 
           <div class="sep"></div>
 
           <h2 style="margin-top:0">What I’m Looking For</h2>
           <p class="muted" style="margin:0">
-            Internship roles in <b>Agentic AI</b>, <b>AI Automation</b>, and <b>Data/ML Systems</b> where I can
-            design automated workflows, integrate AI into applications, and support teams with scalable, well-documented solutions.
+            Internship roles involving <b>Agentic AI</b>, <b>AI Automation</b>, and <b>Data/ML Systems</b> — where I can
+            support agile collaboration, build structured pipelines, and translate technical possibilities into user-focused solutions.
           </p>
         </div>
 
       </div>
     </header>
 
-    <!-- ABOUT + EDUCATION -->
-    <section id="about" class="section grid">
+    <!-- OBJECTIVE -->
+    <section id="objective" class="section">
       <div class="card">
-        <h2>About Me</h2>
+        <h2>Objective</h2>
         <p class="muted" style="margin:0">
-          I’m a Computer Science Master’s student at the University of Passau with strong analytical and organizational skills.
-          I enjoy working at the intersection of <b>AI, automation, data,</b> and <b>product collaboration</b>—creating structured
-          processes, improving visibility, and delivering solutions that are easy to communicate and maintain.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Education</h2>
-        <p style="margin:0">
-          <b>M.Sc. Computer Science</b> — University of Passau <span class="muted">(2024–Present)</span><br/>
-          <b>B.Tech Computer Science</b> — Sahrdaya College of Engineering and Technology <span class="muted">(2019–2023)</span><br/>
-          <span class="muted">CGPA: 7.97</span>
+          Motivated Computer Science Master’s student with strong analytical and organizational skills, and experience supporting
+          product-oriented collaboration using tools such as Jira, Confluence, and MS Office. Aspiring to grow into a product management role,
+          with a particular interest in organizing product workflows, facilitating collaboration between stakeholders, and contributing to product
+          discovery and ideation. Enjoy designing structured processes, arranging workshops, and exploring new ideas to translate technical
+          possibilities into user-focused, value-driven solutions in agile environments.
         </p>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section grid">
-      <div class="card">
-        <h2>Technical Skills</h2>
-        <ul>
-          <li><b>Programming:</b> Python, SQL, JavaScript</li>
-          <li><b>Automation:</b> workflow design, documentation-first delivery, process structuring</li>
-          <li><b>Data:</b> processing pipelines, analysis, anomaly detection basics</li>
-          <li><b>Engineering:</b> modular architecture, maintainability</li>
-          <li><b>Tools:</b> Git/GitHub, Docker</li>
-        </ul>
+    <!-- EDUCATION + SKILLS -->
+    <section class="section grid">
+      <div class="card" id="education">
+        <h2>Education</h2>
+        <p style="margin:0">
+          <b>University of Passau</b> <span class="muted"> (2024 – Ongoing)</span><br/>
+          Master of Science in Computer Science — Germany
+          <br/><br/>
+          <b>Sahrdaya College of Engineering and Technology, Kodakara</b> <span class="muted">(2019 – 2023)</span><br/>
+          Bachelor of Technology in Computer Science <span class="muted">• CGPA: 7.97</span>
+        </p>
       </div>
 
-      <div class="card">
-        <h2>Agile & Collaboration</h2>
+      <div class="card" id="skills">
+        <h2>Skills</h2>
         <ul>
-          <li><b>Agile experience:</b> sprint planning support, backlog refinement, reviews</li>
-          <li><b>Tools:</b> Jira, Confluence, Notion, Miro, MS Office</li>
-          <li><b>Strengths:</b> stakeholder communication, prioritization, structured documentation</li>
+          <li><b>Agile & Collaboration:</b> Basic Scrum understanding, meeting preparation, documentation, visualization</li>
+          <li><b>Tools:</b> Miro, MS Office (PowerPoint, Excel, Outlook), Git, GitHub, Docker, Confluence, Notion</li>
+          <li><b>Technical Background:</b> Python, SQL, JavaScript</li>
           <li><b>Languages:</b> English (C1), German (B1)</li>
+          <li><b>Soft Skills:</b> Stakeholder Management, Communication, Prioritization, Data-Driven Decision Making</li>
         </ul>
       </div>
     </section>
@@ -364,7 +346,7 @@
           <li>Improved projected user engagement by 25% and reduced response latency by 40%</li>
           <li>Evaluated chatbot architectures for scalability, achieving a 30% improvement</li>
           <li>Authored technical documentation reducing onboarding time by 50%</li>
-          <li>Supported sprint reviews, iteration planning, and backlog refinement</li>
+          <li>Facilitated and supported sprint reviews, iteration planning, and refining the team backlog</li>
         </ul>
       </div>
     </section>
@@ -374,7 +356,7 @@
       <div class="card" style="margin-bottom:16px">
         <h2>Projects</h2>
         <p class="muted" style="margin:0">
-          Selected projects — can be expanded into case studies with problem, approach, and results.
+          These are listed exactly from my CV (titles, dates, and key contributions).
         </p>
       </div>
 
@@ -382,31 +364,33 @@
         <div class="card">
           <div class="projHead">
             <h2 style="margin:0">Data Visualization & Analysis Dashboard</h2>
-            <span class="tag">Web Analytics</span>
+            <span class="tag">04/2025 – 07/2025</span>
           </div>
-          <p class="muted" style="margin:6px 0 0">04/2025 – 07/2025</p>
           <ul>
             <li>Web-based analytics tool for structured presentation of results</li>
             <li>Focused on communicating insights to non-technical audiences</li>
-            <li>Planned milestones and coordinated processing → visualization → deployment</li>
+            <li>Planned and structured project milestones independently</li>
             <li>Created documentation and visual presentations of analytical results</li>
+            <li>Coordinated data processing, visualization, and deployment</li>
           </ul>
           <div class="cta" style="margin-top:10px">
-            <a class="btn" href="https://github.com/AnnaRose20/Data-visualisation" target="_blank" rel="noreferrer">View Repo</a>
+            <a class="btn" href="https://github.com/AnnaRose20/Data-visualisation" target="_blank" rel="noreferrer">View GitHub Repo</a>
           </div>
         </div>
 
         <div class="card">
           <div class="projHead">
             <h2 style="margin:0">RoadBot</h2>
-            <span class="tag green">AI Prototype</span>
+            <span class="tag green">10/2022 – 06/2023</span>
           </div>
-          <p class="muted" style="margin:6px 0 0">10/2022 – 06/2023</p>
+          <p class="muted" style="margin:0">
+            Autonomous driving assistance – pothole detection and route optimization
+          </p>
           <ul>
-            <li>Autonomous driving assistance – pothole detection and route optimization</li>
+            <li>Developed a prototype supporting autonomous driving perception use cases through road condition analysis</li>
             <li>Worked on data collection and preprocessing from sensor and image sources</li>
-            <li>Integrated perception outputs with backend logic to support routing decisions</li>
-            <li>Strengthened understanding of perception-driven, data-driven systems</li>
+            <li>Integrated perception outputs with backend logic to support routing and driving decisions</li>
+            <li>Strengthened understanding of data-driven, perception-based systems</li>
           </ul>
         </div>
       </div>
@@ -416,11 +400,12 @@
     <section id="leadership" class="section grid">
       <div class="card">
         <h2>Leadership & Event Organization</h2>
-        <p class="muted" style="margin:0">Hackathon Planning & Management (2022) • Kerala, India</p>
+        <p class="muted" style="margin:0"><b>Hackathon Planning & Management</b> (2022) • Organizing Team Member • Kerala, India</p>
         <ul>
           <li>Planned and coordinated a student hackathon from concept to execution</li>
           <li>Managed scheduling, task allocation, and stakeholder communication</li>
           <li>Supported logistics, registrations, and real-time issue resolution</li>
+          <li>Collaborated with a cross-functional organizing team</li>
           <li>Documented feedback and outcomes for future events</li>
         </ul>
         <div class="cta" style="margin-top:10px">
@@ -435,6 +420,12 @@
           <b>GitHub:</b> <a href="https://github.com/AnnaRose20" target="_blank" rel="noreferrer">@AnnaRose20</a><br/>
           <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/anna-rose-joshy-29b998196/" target="_blank" rel="noreferrer">anna-rose-joshy</a><br/>
           <b>Phone:</b> +49 15510714519
+        </p>
+
+        <div class="sep"></div>
+        <p class="small" style="margin:0">
+          If “Download Resume” doesn’t work, check that the resume file in your repo is named exactly
+          <span class="kbd">AnnaRose_CV.pdf</span> (case-sensitive).
         </p>
       </div>
     </section>
