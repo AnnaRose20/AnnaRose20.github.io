@@ -8,9 +8,11 @@
 
 ## About Me
 
-I am a Master’s student in Computer Science at the University of Passau with a strong foundation in data engineering, analytics, and collaborative software development.
+I am a Master’s student in Computer Science actively seeking an internship opportunity in Agentic AI and intelligent automation. I bring hands-on experience working in agile development environments through my industrial internship, where I collaborated with cross-functional teams using tools such as Jira and Confluence to support iterative development and product delivery.
 
-I enjoy working at the intersection of data, AI, and product thinking—transforming technical systems into structured, user-focused solutions.
+I have a strong foundation in data-driven problem solving, along with proficiency in MS Office tools for documentation, analysis, and professional presentations. I enjoy working collaboratively, contributing ideas, and supporting team goals to deliver high-quality results efficiently.
+
+Motivated, adaptable, and eager to learn, I thrive in collaborative environments and aim to contribute meaningfully while continuously developing my technical and professional skills in real-world AI systems.
 
 ---
 
